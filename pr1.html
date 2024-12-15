@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .logout-btn {
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .logout-btn:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+    <!-- The Logout button -->
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+    <script>
+        // This function can be linked to backend logic for actual logout.
+        function logout() {
+            alert("You have been logged out.");
+            // Redirecting to the login page or home page after logout
+            window.location.href = 'login.html';  // Modify with your actual login page
+        }
+    </script>
+</body>
+</html>
